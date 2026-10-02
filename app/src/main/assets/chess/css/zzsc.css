@@ -1,0 +1,158 @@
+﻿* { box-sizing: border-box; }
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #6a3b22;
+    color: #6b3f2a;
+    font-family: sans-serif;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: env(safe-area-inset-top);
+}
+.board {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px 0;
+}
+#chess {
+    display: block;
+    touch-action: none;
+}
+.move_info {
+    min-height: 28px;
+    margin: 6px 16px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff8ee;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bn_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 12px calc(12px + env(safe-area-inset-bottom));
+}
+.bn_box button,
+.sheet_bar button,
+.card button,
+#billClose {
+    flex: 1 1 30%;
+    min-height: 44px;
+    border: none;
+    border-radius: 22px;
+    background: rgba(255, 246, 232, 0.92);
+    color: #6b3f2a;
+    font-size: 16px;
+    font-family: inherit;
+}
+.bn_box button.on {
+    background: #f07a3a;
+    color: #fff;
+}
+.bn_box button:active,
+.card button:active,
+.sheet_bar button:active {
+    opacity: 0.82;
+}
+.sheet {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 46%;
+    z-index: 20;
+    flex-direction: column;
+    background: rgba(255, 246, 232, 0.97);
+    border-radius: 18px 18px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.sheet_bar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px;
+}
+#billList {
+    flex: 1;
+    min-height: 40px;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    color: #6b3f2a;
+    font-size: 16px;
+    padding: 0 8px;
+}
+#billClose {
+    flex: 0 0 88px;
+    background: #f07a3a;
+    color: #fff;
+}
+.bill_box {
+    flex: 1;
+    margin: 0;
+    padding: 0 8px 12px 28px;
+    overflow: auto;
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
+}
+.bill_box li {
+    padding: 8px 10px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.bill_box li:active {
+    background: #f3d7b5;
+}
+.mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    align-items: center;
+    justify-content: center;
+    background: rgba(50, 24, 12, 0.55);
+    padding: 24px;
+}
+.card {
+    width: 100%;
+    max-width: 320px;
+    background: #fff6e8;
+    border-radius: 20px;
+    padding: 28px 22px 22px;
+    text-align: center;
+}
+.card h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #6b3f2a;
+}
+.card p {
+    margin: 10px 0 22px;
+    font-size: 16px;
+    color: #8a5a40;
+}
+.card button {
+    width: 100%;
+    background: #f07a3a;
+    color: #fff;
+}

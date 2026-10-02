@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'rp.games'
+    ndkVersion = '29.0.14206865'
+    buildToolsVersion ='36.1.0'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'rp.games'
+        minSdk 29
+        targetSdk 36
+        versionCode 8
+        versionName '1.8'
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('yier.jks')
+            storePassword 'yieryier'
+            keyAlias 'yier'
+            keyPassword 'yieryier'
+        }
+        release {
+            storeFile file('yier.jks')
+            storePassword 'yieryier'
+            keyAlias 'yier'
+            keyPassword 'yieryier'
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+}
+
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.outputs.each { output ->
+            output.outputFileName.set(output.versionName.map { version ->
+                "bubugame-${version}-${variant.name}.apk"
+            })
+        }
+    }
+}
+
+configurations.configureEach {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22'
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core:1.16.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+}

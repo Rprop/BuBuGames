@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">游戏布</string>
+    <string name="hub_title">游戏布</string>
+    <string name="hub_pick">选一个小游戏</string>
+    <string name="game_baozi_title">抢包子</string>
+    <string name="game_baozi_detail">白色小熊猫一二，棕色小熊猫布布。同一 Wi-Fi 下开房，另一台扫码加入。</string>
+    <string name="game_enter">进入</string>
+    <string name="game_merge_title">合成小布布</string>
+    <string name="game_merge_detail">把布布丢进箱子，两只一样的会合成更大的一只。堆过警戒线就结束。</string>
+    <string name="game_journey_title">去见你的小幸福</string>
+    <string name="game_journey_detail">扮演布布或一二，走过城市、乐园和星空，把沿路的小幸福收集起来。</string>
+    <string name="game_chess_title">中国象棋</string>
+    <string name="game_chess_detail">执红对电脑。新手、中级、大师三档，可以悔棋、换肤，也能翻看棋谱。</string>
+    <string name="title">一二布布</string>
+    <string name="subtitle">抢包子</string>
+    <string name="desc">白色小熊猫一二，棕色小熊猫布布\n同一 Wi-Fi 下，一台开房出示二维码，另一台扫码加入\n左侧摇杆移动，右侧放糖泡</string>
+    <string name="host">创建房间</string>
+    <string name="join">扫码加入</string>
+    <string name="scan_hint">把房间二维码放进中间的方框，或在下面输入 host:port</string>
+    <string name="scan_input_hint">例如 192.168.1.8:28888</string>
+    <string name="scan_join">加入</string>
+    <string name="local">单机练习</string>
+    <string name="settings">人物设置</string>
+    <string name="settings_hint">昵称会出现在对局里，最多 6 个字。不填时，开房和单机显示一二，加入的人显示布布。单机练习里电脑显示 AI。点一张皮肤再保存。没保存过皮肤时，开房和单机用第 3 套，另一位用第 6 套。保存之后就用这一套。联机时对方也能看到你的昵称和皮肤。</string>
+    <string name="settings_name">昵称</string>
+    <string name="settings_name_hint">最多 6 个字，可以不填</string>
+    <string name="settings_skin">皮肤</string>
+    <string name="settings_save">保存设置</string>
+    <string name="settings_saved">已保存</string>
+    <string name="settings_name_bad">昵称最多 6 个字</string>
+    <string name="forward">端口转发</string>
+    <string name="forward_hint">填写 L2TP 服务器、账号、密码和远程端口，再开启转发。本机游戏端口会转到服务器上的远程端口。之后创建房间，二维码改为服务器地址加远程端口。离开这个页面，转发还会继续。设置会留在这台手机上。</string>
+    <string name="forward_server">服务器</string>
+    <string name="forward_server_hint">例如 cts11.ros6.com</string>
+    <string name="forward_user">账号</string>
+    <string name="forward_user_hint">用户名</string>
+    <string name="forward_pass">密码</string>
+    <string name="forward_pass_hint">密码</string>
+    <string name="forward_port">远程端口</string>
+    <string name="forward_port_hint">例如 12306</string>
+    <string name="forward_save">保存设置</string>
+    <string name="forward_start">开启转发</string>
+    <string name="forward_stop">关闭转发</string>
+    <string name="forward_saved">已保存</string>
+    <string name="forward_need">请填写服务器、账号、密码和远程端口</string>
+    <string name="forward_host_bad">服务器地址不正确</string>
+    <string name="forward_port_bad">远程端口要在 1 到 65535 之间</string>
+    <string name="forward_abi">这台手机不是 arm64，无法开启转发</string>
+    <string name="help">怎么玩</string>
+    <string name="help_back">返回</string>
+
+    <string name="help_play_title">怎么操作</string>
+    <string name="help_play">左侧圆盘是摇杆，只能上下左右走。右侧按钮放下糖泡。人要站在格子中间，糖泡才会放下。脚下已经踩着的糖泡可以走出去，不管是谁放的。离开那一格之后就不能再踩上去。</string>
+
+    <string name="help_win_title">怎么分输赢</string>
+    <string name="help_win">创建房间或单机练习时选定这一次的时长，可选 3、5、8 或 10 分钟。再来一局继续用这次选的时长。时间到，包子多的一方赢，一样多就是平局。顶栏左边是左边那位，右边是右边那位。昵称和皮肤在设置里改，联机时对方也能看到。包子图后面的数字就是分数。对方中途退出，这局结束。</string>
+
+    <string name="help_hit_title">被糖泡炸到</string>
+    <string name="help_hit">糖泡约 2 秒后十字炸开。火焰烧到的格子上如果还有没炸的糖泡，会马上一起炸开，并带上那颗自己的火力。炸到人时，会在原地停住 5 秒。这段时间如果另一个玩家走进这一格，会立刻爆开。身上有叉子时，停住还没爆开可以点一次放炮按钮挣脱，叉子少一把，人留在原地。停住结束或被提前引爆后，身上一半的包子，以及全部加速、加泡、加威和叉子，会掉到场上的随机空格。空格不够时，多出来的就丢掉。人会从画面上消失 3 秒，再出现在自己这一局的出生点。等级也会回到开局。</string>
+
+    <string name="help_map_title">地图</string>
+    <string name="help_map">硬墙每局随机散开，炸不开，爆炸到这里会停住。软块每局随机贴图，可以被炸开，炸开后爆炸也会停住。炸开软块时，大约四成掉出包子，其余是加速、加泡、加威，很少掉出叉子，或者什么都没有。开局 6 秒后，场上包子少于 5 个时，大约每 7.5 秒会在一块空地上再出现 1 个。两个出生点每局在四个角里随机各占一角，旁边的空地不会出包子。走到格子中间就能捡起来。</string>
+
+    <string name="help_item_title">道具</string>
+    <string name="help_item_bun">包子：分数 +1。</string>
+    <string name="help_item_speed">加速：走得更快。顶栏鞋子旁的数字开局是 1，最多加成到 6。超过后还能捡，但不再加快。被炸到时，身上的加速会全部掉出去。</string>
+    <string name="help_item_bomb">加泡：可以同时多放一个糖泡。顶栏加泡图旁开局是 1/1，前面是还能放的个数，后面最多加成到 6。超过后还能捡，但不再增加个数。被炸到时，身上的加泡会全部掉出去。</string>
+    <string name="help_item_flame">加威：爆炸更远。顶栏加威图旁的数字开局是 1，最多加成到 6。超过后还能捡，但不再加远。被炸到时，身上的加威会全部掉出去。</string>
+    <string name="help_item_fork">叉子：顶栏叉子旁的数字是身上还有几把。被泡泡困住、还没爆开时，点一次放炮按钮可以挣脱，并少一把叉子。别人走进这一格仍会爆开。爆开时，剩下的叉子会全部掉出去。</string>
+
+    <string name="help_net_title">两台手机</string>
+    <string name="help_net">创建房间时选定这一次的游戏时长，手机上会出示二维码。二维码里是 host:port。扫码加入的人用自己的昵称和皮肤，时长跟房主这次选的一样。同一 Wi-Fi 下可以直接扫。不在同一个网络时，可以先在端口转发里填好服务器并开启，再创建房间，二维码会改成服务器地址和远程端口。也可以在扫码页输入房主的 IP 或域名，加上端口。对局结束后可以再来一局，不用重新扫码，时长也不用再选，出生点会重新随机。连不上时可以重试。单机练习时另一位由电脑控制，昵称显示 AI。昵称和皮肤在设置里保存。</string>
+</resources>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>中国象棋</title>
+    <link href="css/zzsc.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="box" id="box">
+        <div class="board" id="board">
+            <canvas id="chess"></canvas>
+        </div>
+        <div id="moveInfo" class="move_info">选择难度，执红先走</div>
+        <div class="bn_box" id="bnBox">
+            <button type="button" id="tyroPlay">新手</button>
+            <button type="button" id="superPlay">中级</button>
+            <button type="button" id="masterPlay">大师</button>
+            <button type="button" id="regretBn">悔棋</button>
+            <button type="button" id="billBn">棋谱</button>
+            <button type="button" id="stypeBn">换肤</button>
+        </div>
+    </div>
+    <div id="billMask" class="sheet">
+        <div class="sheet_bar">
+            <select id="billList"></select>
+            <button type="button" id="billClose">关闭</button>
+        </div>
+        <ol id="billBox" class="bill_box"></ol>
+    </div>
+    <div id="resultMask" class="mask">
+        <div class="card">
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <button type="button" id="resultAgain">再来一局</button>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/AI.js"></script>
+    <script src="js/bill.js"></script>
+    <script src="js/gambit.js"></script>
+    <script type="text/javascript">
+        abc();
+    </script>
+</body>
+</html>
